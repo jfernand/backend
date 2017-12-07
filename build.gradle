@@ -1,0 +1,19 @@
+apply plugin: 'application'
+apply plugin: 'groovy'
+
+repositories {
+    jcenter()
+    maven {
+        name 'github-indvd00m'
+        url 'https://github.com/indvd00m/maven-repo/raw/master/repository'
+    }
+}
+
+dependencies {
+  compile 'com.indvd00m.ascii.render:ascii-render:1.2.1'
+  compile 'commons-cli:commons-cli:1.4'
+  compile 'org.projectlombok:lombok:1.16.18'
+  testCompile 'org.spockframework:spock-core:1.1-groovy-2.4'
+}
+
+mainClassName = 'it.raincloud.App'
